@@ -1,0 +1,13 @@
+{
+    "builds": [{
+        "src": "falsh_card.py",
+        "use": "@vercel/python",
+        "config": {
+            "maxLambdaSize": "50mb"
+        }
+    }],
+    "routes": [{
+        "src": "/(.*)",
+        "dest": "falsh_card.py"
+    }]
+}
