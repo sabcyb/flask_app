@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deletion Page</title>
+</head>
+
+<body>
+    <h1>Welcome to the Deletion Page of Card</h1>
+    <h2>The card number : {{ card.id }}</h2>
+    <p>The name of the country : {{ card.country }}</p>
+    <p>The name of the capital : {{ card.capital }}</p>
+    <h3>Are you sure?</h3>
+    <form method="post">
+        <label for="checker">Tick this to confirm</label>
+        <input type="checkbox" id="checker" name="checker">
+        <br><br>
+        <button type="submit">Press to Delete</button>
+    </form>
+</body>
+
+</html>

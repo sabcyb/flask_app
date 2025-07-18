@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Card {{ card.id }}</title>
+</head>
+
+<body>
+    <h1>Welcome to the Card : {{ id }}</h1>
+    <h2>The card number : {{ card.id }}</h2>
+    <p>The name of the country : {{ card.country }}</p>
+    <p>The name of the capital : {{ card.capital }}</p>
+
+    <button>
+        <a href="{{url_for('index')}}">
+            Home
+        </a>
+    </button>
+    <button>
+        <a href="{{url_for('card', number=id - 1)}}">
+            Previous
+        </a>
+    </button>
+    <button>
+        <a href="{{url_for('card', number=id + 1)}}">
+            Next
+        </a>
+    </button>
+    <button>
+        <a href="{{url_for('delete_card', number=id)}}">
+            Delete This Card
+        </a>
+    </button>
+
+</body>
+
+</html>
